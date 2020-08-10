@@ -11,6 +11,8 @@ rule all:
     input:
         "empirical_distribution.rds"
 
+localrules: split
+
 # 1. Merge data sets
 # 2. Random splits: Permutation test to construct empirical distribution
 rule split:
