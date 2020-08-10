@@ -1,0 +1,19 @@
+
+datasets:
+    - data/dataset1_p4_N100.rds
+    - data/dataset2_p4_N200.rds
+
+R: /cluster/work/bewi/software/src/R/3.5.1/bin/Rscript
+
+num_splits: 5
+
+run_HCBN2:
+    sampling_mode: forward
+    num_samples: 1000
+    iter_MCEM: 100
+    T0: 50
+    adap_rate: 0.1
+    iter_ASA: 17000
+    adaptive: True
+    seed: 47
+    threads: 12
